@@ -1,0 +1,94 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(
+    circle,
+    rgb(197, 194, 194) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-container {
+  padding: 20px;
+}
+
+.nav-ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.nav-ul li a {
+}
+
+.drawer-checkbox {
+  display: none;
+}
+
+.drawer-button {
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.drawer {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  overflow-y: auto;
+  transition: left 0.3s;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.drawer nav ul {
+  list-style: none;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+.drawer nav ul li {
+  margin: 0;
+}
+
+.drawer nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+}
+
+.drawer nav ul li a:hover {
+  background-color: #555;
+}
+
+.drawer-checkbox:checked ~ .drawer {
+  left: 0;
+}
+
+.content {
+  padding: 20px;
+  margin-left: 15px;
+}
