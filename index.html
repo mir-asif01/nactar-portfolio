@@ -33,39 +33,89 @@
         </li>
         <li id="time-li"></li>
       </ul>
-      <input type="checkbox" id="drawer-toggle" class="drawer-checkbox" />
-
-      <!-- Label for checkbox (the open button) -->
-
-      <!-- The drawer -->
-      <div class="drawer">
-        <!-- Close button inside the drawer -->
-        <label for="drawer-toggle" class="close-button">close</label>
-        <nav>
-          <ul>
-            <li><a href="#">/projects</a></li>
-            <li><a href="#">/skills</a></li>
-            <li><a href="#">/contact</a></li>
-          </ul>
-        </nav>
-      </div>
     </nav>
+    <input type="checkbox" id="drawer-toggle" class="drawer-checkbox" />
+    <div class="drawer">
+      <nav>
+        <ul>
+          <li><a href="#projects">/projects</a></li>
+          <li><a href="#skills">/skills</a></li>
+          <li><a href="#contact">/contact</a></li>
+        </ul>
+      </nav>
+      <label for="drawer-toggle" class="close-button">close</label>
+    </div>
     <div class="main">
       <div class="intro">
+        <p class="text-center work ping">available for work</p>
         <h1 class="text-center">mir kamrul ahsan asif</h1>
         <div>
-          <ul>
-            <li>student</li>
-            <li>programmer</li>
-            <li>developer</li>
-            <li>problem solver</li>
-          </ul>
+          <p class="tw-p">I am <span class="tw"></span></p>
         </div>
       </div>
-      <div class="location"><h1>this is location section</h1></div>
-      <div class="social"><h1>this is social media section</h1></div>
-      <div class="projects"><h1>this is projects section</h1></div>
-      <div class="skills"><h1>this is skills section</h1></div>
+      <div class="projects" id="projects">
+        <h1 class="my-5">/my projects</h1>
+        <div class="project-container">
+          <div class="project-card col-4">
+            <img
+              src="./assets/images/p1.png"
+              alt="Project Image"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Electronics repair shop.</h3>
+              <div class="project-buttons">
+                <a href="#" class="btn live-btn">Live</a>
+                <a href="#" class="btn code-btn">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card col-4">
+            <img
+              src="./assets/images/p2.png"
+              alt="Project Image"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Protask, kanban style task manager.</h3>
+              <div class="project-buttons">
+                <a href="#" class="btn live-btn">Live</a>
+                <a href="#" class="btn code-btn">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card col-4">
+            <img
+              src="./assets/images/p3.png"
+              alt="Project Image"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Projectile, simple project manager.</h3>
+              <div class="project-buttons">
+                <a href="#" class="btn live-btn">Live</a>
+                <a href="#" class="btn code-btn">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="my-5" target="_blank" href="https://github.com/mir-asif01"
+          >view projects more on github</a
+        >
+      </div>
+      <div class="skills" id="skills">
+        <h1>/skills</h1>
+        <div class="text-cloud">
+          <span><img src="./assets/icons/js.png" alt="" /></span>
+          <span><img src="./assets/icons/html.png" alt="" /></span>
+          <span><img src="./assets/icons/css-3.png" alt="" /></span>
+          <span><img src="./assets/icons/database.png" alt="" /></span>
+          <span><img src="./assets/icons/nodejs.png" alt="" /></span>
+          <span><img src="./assets/icons/reactjs.png" alt="" /></span>
+          <span><img src="./assets/icons/expressjs.png" alt="" /></span>
+          <span><img src="./assets/icons/github-sign.png" alt="" /></span>
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <p>&copy; 2024 YourCompany. All Rights Reserved.</p>
@@ -81,5 +131,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed(".tw", {
+        strings: ["Student", "Programmer", "Developer", "Problem Solver"],
+        typeSpeed: 100,
+        loop: true,
+      })
+    </script>
   </body>
 </html>
