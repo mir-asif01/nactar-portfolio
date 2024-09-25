@@ -14,6 +14,8 @@ body {
 
 .nav-container {
   padding: 20px 30px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .nav-ul {
