@@ -343,6 +343,23 @@ button:hover {
   border-top: 1px solid #ddd;
 }
 
+.services {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #c0eba6;
+  color: #111010;
+  padding: 20px 30px;
+  border: 1px solid gray;
+}
+
 /* Footer Links */
 .footer-links {
   list-style-type: none;
