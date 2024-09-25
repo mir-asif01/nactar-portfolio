@@ -15,13 +15,15 @@ body {
 .nav-container {
   padding: 20px 30px;
   width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .nav-ul {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
