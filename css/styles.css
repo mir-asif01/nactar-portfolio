@@ -15,13 +15,15 @@ body {
 .nav-container {
   padding: 20px 30px;
   width: 80%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .nav-ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .nav-ul li {
@@ -42,7 +44,7 @@ body {
 .drawer {
   width: 250px;
   height: 100%;
-  background-color: #f3f0f0;
+  background-color: #e3fef7;
   position: fixed;
   top: 0;
   left: -250px;
@@ -77,11 +79,10 @@ body {
   padding: 15px;
   text-decoration: none;
   color: rgb(10, 0, 0);
-  background-color: #f3f0f0;
 }
 
 .drawer nav ul li a:hover {
-  background-color: #c8cee7;
+  background-color: #73ec8b;
 }
 
 .drawer-checkbox:checked ~ .drawer {

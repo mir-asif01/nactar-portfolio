@@ -3,6 +3,12 @@
     width: 100%;
     padding: 10px 5px;
   }
+  .nav-ul {
+    justify-content: space-between;
+  }
+  .nav-ul li {
+    font-size: 20px;
+  }
   .intro h1 {
     font-size: 2rem;
   }
